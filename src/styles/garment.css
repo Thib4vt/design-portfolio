@@ -1,0 +1,178 @@
+.garment-page {
+  padding: 1rem;
+  max-width: 1800px;
+  margin: 0 auto;
+}
+
+.cover-image {
+  width: 100%;
+  height: calc(100vh - 200px); /* Adjust for header and margins */
+  margin-bottom: 2rem;
+  border-radius: 4px;
+  background: #f5f5f5;
+  position: relative;
+}
+
+.cover-image img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-height: 90%;
+  max-width: 90%;
+  width: auto;
+  height: auto;
+}
+
+.garment-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, minmax(600px, 1fr));
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.garment-item {
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.garment-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  image-rendering: crisp-edges;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Make first row images closer together */
+.garment-item:nth-child(1),
+.garment-item:nth-child(2) {
+  margin-bottom: -0.25rem;
+}
+
+@media (max-width: 1200px) {
+  .garment-grid {
+    grid-template-rows: repeat(3, minmax(500px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .garment-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, minmax(400px, 1fr));
+    gap: 0.25rem;
+  }
+  
+  .garment-page {
+    padding: 0.5rem;
+  }
+
+  /* Reset the margin for first two items on mobile */
+  .garment-item:nth-child(1),
+  .garment-item:nth-child(2) {
+    margin-bottom: 0;
+  }
+
+  .cover-image img {
+    max-width: 85%;
+  }
+}
+
+@media (max-width: 480px) {
+  .garment-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, minmax(350px, 1fr));
+    gap: 0.25rem;
+  }
+  
+  .garment-page {
+    padding: 0.25rem;
+  }
+}
+
+/* Bum Bag Capri specific styling */
+.bumbag-grid {
+  gap: 1rem;
+}
+
+.bumbag-item {
+  height: auto !important;
+  aspect-ratio: 1/1;
+  position: relative;
+}
+
+.bumbag-item .image-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.bumbag-item img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .bumbag-grid {
+    gap: 0.75rem;
+  }
+  
+  .bumbag-item .image-background {
+    padding: 0.75rem;
+  }
+}
+
+/* New grid layouts */
+.garment-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin-top: 1rem;
+}
+
+.garment-grid-2x2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, minmax(400px, 1fr));
+  gap: 0.25rem;
+}
+
+.garment-grid-1x3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: minmax(400px, 1fr);
+  gap: 0.25rem;
+}
+
+@media (max-width: 768px) {
+  .garment-grid-2x2 {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, minmax(350px, 1fr));
+  }
+
+  .garment-grid-1x3 {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, minmax(350px, 1fr));
+  }
+}
+
+.garment-item.smaller-image img {
+  max-width: 75%;
+  max-height: 75%;
+  margin: auto;
+} 
