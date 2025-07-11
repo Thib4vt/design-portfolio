@@ -1,6 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 export default function BumBagCapri() {
+  const [loadedImages, setLoadedImages] = useState<Set<number>>(new Set())
+  const [errorImages, setErrorImages] = useState<Set<number>>(new Set())
+
   const images = [
     {
       src: import.meta.env.BASE_URL + 'assets/garments/bum-bag-capri/converted_aBumBagfrt.png',
@@ -28,6 +31,14 @@ export default function BumBagCapri() {
     }
   ]
 
+  const handleImageLoad = (index: number) => {
+    setLoadedImages(prev => new Set([...prev, index]))
+  }
+
+  const handleImageError = (index: number) => {
+    setErrorImages(prev => new Set([...prev, index]))
+  }
+
   return (
     <main className="garment-page">
       <h1>Bum-Bag Capri</h1>
@@ -52,14 +63,50 @@ export default function BumBagCapri() {
               justifyContent: 'center',
               alignItems: 'center',
               width: '100%',
-              height: '100%'
+              height: '100%',
+              minHeight: '300px'
             }}
           >
+            {!loadedImages.has(index) && !errorImages.has(index) && (
+              <div style={{
+                width: '100%',
+                height: '300px',
+                backgroundColor: '#f0f0f0',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                fontSize: '14px',
+                color: '#666'
+              }}>
+                Loading image {index + 1}... (1-2MB file)
+              </div>
+            )}
+            {errorImages.has(index) && (
+              <div style={{
+                width: '100%',
+                height: '300px',
+                backgroundColor: '#ffebee',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                fontSize: '14px',
+                color: '#d32f2f'
+              }}>
+                Failed to load image {index + 1}
+              </div>
+            )}
             <img
               src={image.src}
               alt={image.alt}
               loading="lazy"
-              style={{ display: 'block', width: '100%', maxWidth: '900px', height: 'auto' }}
+              onLoad={() => handleImageLoad(index)}
+              onError={() => handleImageError(index)}
+              style={{ 
+                display: loadedImages.has(index) ? 'block' : 'none',
+                width: '100%', 
+                maxWidth: '900px', 
+                height: 'auto' 
+              }}
             />
           </div>
         ))}

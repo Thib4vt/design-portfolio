@@ -13,7 +13,7 @@ export default function Garments() {
       title: "Bum-Bag Capri",
       date: "Spring 2025",
       path: "/garments/bum-bag-capri",
-      imageUrl: import.meta.env.BASE_URL + 'assets/garments/bum-bag-capri/converted_bumbagBK3.png'
+      imageUrl: import.meta.env.BASE_URL + 'assets/garments/bum-bag-capri/converted_aBumBagfrt.png'
     },
     {
       title: "Inverted Box Pleat Capri",

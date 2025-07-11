@@ -12,7 +12,7 @@ export default function Garments() {
     {
       title: "Bum-Bag Capri",
       path: "/garments/bum-bag-capri",
-      imageUrl: import.meta.env.BASE_URL + 'assets/garments/bum-bag-capri/bum-bag-capri-1.jpg',
+      imageUrl: import.meta.env.BASE_URL + 'assets/garments/bum-bag-capri/converted_aBumBagfrt.png',
       date: "Spring 2024"
     },
     {
