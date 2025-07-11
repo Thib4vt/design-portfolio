@@ -6,12 +6,12 @@ export default function Styling() {
     {
       title: "Styling",
       path: "/styling/style",
-      imageUrl: "/assets/styling-cover.jpg"
+      imageUrl: import.meta.env.BASE_URL + 'assets/styling-cover.jpg'
     },
     {
       title: "Curation",
       path: "/styling/curation",
-      imageUrl: "/assets/curation-cover.jpg"
+      imageUrl: import.meta.env.BASE_URL + 'assets/curation-cover.jpg'
     }
   ]
 

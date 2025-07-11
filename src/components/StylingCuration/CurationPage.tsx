@@ -35,7 +35,9 @@ export default function CurationPage() {
       }}>
         {CuratedPiecesList.map((piece) => {
           // Try to load the image directly from the public folder
-          const imagePath = piece.imageUrl.startsWith('/') ? piece.imageUrl : `/${piece.imageUrl}`
+          const imagePath = piece.imageUrl.startsWith('/') 
+            ? import.meta.env.BASE_URL + piece.imageUrl.substring(1)
+            : import.meta.env.BASE_URL + piece.imageUrl
           console.log('Loading image from path:', imagePath)
           
           return (

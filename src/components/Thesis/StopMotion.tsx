@@ -32,7 +32,7 @@ export default function StopMotion() {
             outline: 'none'
           }}
         >
-          <source src="/assets/thesis/stop-motion/new jawn video.mp4" type="video/mp4" />
+          <source src={import.meta.env.BASE_URL + 'assets/thesis/stop-motion/new jawn video.mp4'} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>

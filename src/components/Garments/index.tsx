@@ -6,19 +6,19 @@ export default function Garments() {
     {
       title: "Dog Ear Button Up",
       path: "/garments/dog-ear-button-up",
-      imageUrl: "/assets/garments/dog-ear-button-up/dog-ear-button-up-1.png",
+      imageUrl: import.meta.env.BASE_URL + 'assets/garments/dog-ear-button-up/dog-ear-button-up-1.png',
       date: "Spring 2024"
     },
     {
       title: "Bum-Bag Capri",
       path: "/garments/bum-bag-capri",
-      imageUrl: "/assets/garments/bum-bag-capri/bum-bag-capri-1.jpg",
+      imageUrl: import.meta.env.BASE_URL + 'assets/garments/bum-bag-capri/bum-bag-capri-1.jpg',
       date: "Spring 2024"
     },
     {
       title: "Peacekeeper Button Up",
       path: "/garments/peacekeeper-button-up",
-      imageUrl: "/assets/garments/peacekeeper-button-up/peacekeeper-button-up-1.jpg",
+      imageUrl: import.meta.env.BASE_URL + 'assets/garments/peacekeeper-button-up/peacekeeper-button-up-1.jpg',
       date: "Fall 2023",
       comingSoon: true
     }

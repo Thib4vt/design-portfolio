@@ -3,52 +3,52 @@ import React from 'react'
 export default function Gerber() {
   const images = [
     {
-      src: "/assets/gerber-accumark/tGERBER.png",
+      src: import.meta.env.BASE_URL + 'assets/gerber-accumark/tGERBER.png',
       alt: "Gerber Accumark Work",
       className: "pattern"
     },
     {
-      src: "/assets/gerber-accumark/TGERBER2.JPG",
+      src: import.meta.env.BASE_URL + 'assets/gerber-accumark/TGERBER2.JPG',
       alt: "Gerber Accumark Work 2",
       className: "pattern"
     },
     {
-      src: "/assets/gerber-accumark/BOMBER_GERBER.png",
+      src: import.meta.env.BASE_URL + 'assets/gerber-accumark/BOMBER_GERBER.png',
       alt: "Bomber Gerber Pattern",
       className: "pattern"
     },
     {
-      src: "/assets/gerber-accumark/thibaut rappaport - pant corrections.png",
+      src: import.meta.env.BASE_URL + 'assets/gerber-accumark/thibaut rappaport - pant corrections.png',
       alt: "Pant Pattern Corrections",
       className: "pattern"
     },
     {
-      src: "/assets/gerber-accumark/Week 6 - thibaut rappaport.png",
+      src: import.meta.env.BASE_URL + 'assets/gerber-accumark/Week 6 - thibaut rappaport.png',
       alt: "Week 6 Pattern Work",
       className: "pattern"
     },
     {
-      src: "/assets/gerber-accumark/Week 10 - Thibaut Rappaport.png",
+      src: import.meta.env.BASE_URL + 'assets/gerber-accumark/Week 10 - Thibaut Rappaport.png',
       alt: "Week 10 Pattern Work",
       className: "pattern"
     },
     {
-      src: "/assets/gerber-accumark/zFABRIC B MARKER.jpg",
+      src: import.meta.env.BASE_URL + 'assets/gerber-accumark/zFABRIC B MARKER.jpg',
       alt: "Fabric B Marker",
       className: "marker"
     },
     {
-      src: "/assets/gerber-accumark/zHOODIE FABRIC-A MARKER.jpg",
+      src: import.meta.env.BASE_URL + 'assets/gerber-accumark/zHOODIE FABRIC-A MARKER.jpg',
       alt: "Hoodie Fabric A Marker",
       className: "marker"
     },
     {
-      src: "/assets/gerber-accumark/zTER_2404A_Legging_Marker.png",
+      src: import.meta.env.BASE_URL + 'assets/gerber-accumark/zTER_2404A_Legging_Marker.png',
       alt: "Legging Marker",
       className: "marker"
     },
     {
-      src: "/assets/gerber-accumark/zTER_BODYSUIT MARKER (1).jpg",
+      src: import.meta.env.BASE_URL + 'assets/gerber-accumark/zTER_BODYSUIT MARKER (1).jpg',
       alt: "Bodysuit Marker",
       className: "marker"
     }

@@ -6,22 +6,22 @@ export default function TechDesign() {
     {
       title: "Browzwear VStitcher",
       path: "/tech-design/browzwear",
-      imageUrl: "/assets/browzwear/Thesis.svg"
+      imageUrl: import.meta.env.BASE_URL + 'assets/browzwear/Thesis.svg'
     },
     {
       title: "Gerber Accumark",
       path: "/tech-design/gerber",
-      imageUrl: "/assets/gerber-accumark/BOMBER_GERBER.png"
+      imageUrl: import.meta.env.BASE_URL + 'assets/gerber-accumark/BOMBER_GERBER.png'
     },
     {
       title: "CADs",
       path: "/tech-design/cads",
-      imageUrl: "/assets/cads/Peacekeeper-ButtonupCAD.png"
+      imageUrl: import.meta.env.BASE_URL + 'assets/cads/Peacekeeper-ButtonupCAD.png'
     },
     {
       title: "Tech Packs",
       path: "/tech-design/tech-packs",
-      imageUrl: "/assets/tech-packs/beetle-bomber/JPEG BOMBER_Page_02.jpg"
+      imageUrl: import.meta.env.BASE_URL + 'assets/tech-packs/beetle-bomber/JPEG BOMBER_Page_02.jpg'
     }
   ]
 

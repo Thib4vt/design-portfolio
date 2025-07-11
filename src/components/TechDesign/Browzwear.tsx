@@ -6,7 +6,7 @@ export default function Browzwear() {
       title: "Thesis",
       items: [
         {
-          src: "/assets/browzwear/Thesis.svg",
+          src: import.meta.env.BASE_URL + 'assets/browzwear/Thesis.svg',
           alt: "Thesis",
           className: "project-cad"
         }
@@ -16,7 +16,7 @@ export default function Browzwear() {
       title: "Club Set",
       items: [
         {
-          src: "/assets/browzwear/Club Set.svg",
+          src: import.meta.env.BASE_URL + 'assets/browzwear/Club Set.svg',
           alt: "Club Set",
           className: "project-cad"
         }
@@ -26,7 +26,7 @@ export default function Browzwear() {
       title: "Knit Hoodie",
       items: [
         {
-          src: "/assets/browzwear/Knit Hoodie.svg",
+          src: import.meta.env.BASE_URL + 'assets/browzwear/Knit Hoodie.svg',
           alt: "Knit Hoodie",
           className: "project-cad"
         }
@@ -36,7 +36,7 @@ export default function Browzwear() {
       title: "Gym Set",
       items: [
         {
-          src: "/assets/browzwear/Gym Set.png",
+          src: import.meta.env.BASE_URL + 'assets/browzwear/Gym Set.png',
           alt: "Gym Set",
           className: "project-cad"
         }
@@ -46,7 +46,7 @@ export default function Browzwear() {
       title: "Faded Jeans",
       items: [
         {
-          src: "/assets/browzwear/Faded Jeans.svg",
+          src: import.meta.env.BASE_URL + 'assets/browzwear/Faded Jeans.svg',
           alt: "Faded Jeans",
           className: "project-cad"
         }

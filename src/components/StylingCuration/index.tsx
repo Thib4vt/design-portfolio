@@ -6,12 +6,12 @@ export default function StylingCuration() {
     {
       title: "Styling",
       path: "/styling-curation/styling",
-      imageUrl: "/assets/styling-curation/styling/IMG_4705 2.JPG"
+      imageUrl: import.meta.env.BASE_URL + 'assets/styling-curation/styling/IMG_4705 2.JPG'
     },
     {
       title: "Curation",
       path: "/styling-curation/curation",
-      imageUrl: "/assets/curation/SS2002 Naoki Takizawa for Issey Miyake/IMG_2430.JPG"
+      imageUrl: import.meta.env.BASE_URL + 'assets/curation/SS2002 Naoki Takizawa for Issey Miyake/IMG_2430.JPG'
     }
   ]
 

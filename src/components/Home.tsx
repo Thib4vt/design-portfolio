@@ -6,12 +6,12 @@ export default function Home() {
     {
       title: "Beetle Bag Bomber",
       path: "/thesis/beetle",
-      imageUrl: "/assets/thesis/beetle/1jacketopenview.png"
+      imageUrl: import.meta.env.BASE_URL + 'assets/thesis/beetle/1jacketopenview.png'
     },
     {
       title: "Bum-Bag Capri",
       path: "/thesis/bum-bag",
-      imageUrl: "/assets/thesis/bum-bag/converted_bumbagBK3.png"
+      imageUrl: import.meta.env.BASE_URL + 'assets/thesis/bum-bag/converted_bumbagBK3.png'
     }
   ]
 
@@ -19,18 +19,18 @@ export default function Home() {
     {
       title: "Stop-Motion Transformation",
       path: "/thesis/stop-motion",
-      imageUrl: "/assets/thesis/stop-motion/stop-motion-cover.JPG"
+      imageUrl: import.meta.env.BASE_URL + 'assets/thesis/stop-motion/stop-motion-cover.JPG'
     },
     {
       title: "Film",
       path: "/thesis/film",
-      imageUrl: "/assets/film-cover.jpg",
+      imageUrl: import.meta.env.BASE_URL + 'assets/film-cover.jpg',
       comingSoon: true
     },
     {
       title: "Development",
       path: "/thesis/development",
-      imageUrl: "/assets/thesis/development/jacketdev4.jpg"
+      imageUrl: import.meta.env.BASE_URL + 'assets/thesis/development/jacketdev4.jpg'
     }
   ]
 
@@ -45,7 +45,40 @@ export default function Home() {
         <img 
           src={project.imageUrl} 
           alt={project.title} 
-          style={project.title === 'Development' || project.title === 'Stop-Motion Transformation' ? { marginTop: 0, paddingTop: 0 } : {}} 
+          style={
+            project.title === 'Stop-Motion Transformation'
+              ? (typeof window !== 'undefined' && window.innerWidth <= 768
+                  ? {
+                      marginTop: 0,
+                      paddingTop: 0,
+                      width: '100%',
+                      height: '100%',
+                      objectFit: 'cover',
+                      transform: 'scale(1.3)'
+                    }
+                  : { marginTop: 0, paddingTop: 0 })
+              : project.title === 'Development'
+                ? {
+                    marginTop: 0,
+                    paddingTop: 0,
+                    width: '100%',
+                    height: '100%',
+                    objectFit: 'cover',
+                    transform: 'scale(1.15)'
+                  }
+                : project.title === 'Beetle Bag Bomber'
+                  ? (typeof window !== 'undefined' && window.innerWidth <= 768
+                      ? {
+                          marginTop: 0,
+                          paddingTop: 0,
+                          width: '100%',
+                          height: '100%',
+                          objectFit: 'cover',
+                          transform: 'scale(1.15) translateY(5%)'
+                        }
+                      : { marginTop: 0, paddingTop: 0 })
+                  : {}
+          } 
         />
         {project.comingSoon && (
           <div className="coming-soon-overlay">Coming Soon</div>

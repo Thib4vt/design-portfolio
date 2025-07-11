@@ -3,23 +3,23 @@ import React from 'react'
 export default function StylingPage() {
   const stylingImages = [
     {
-      src: "/assets/styling-curation/styling/IMG_4705 2.JPG",
+      src: import.meta.env.BASE_URL + 'assets/styling-curation/styling/IMG_4705 2.JPG',
       alt: "Styling Image 1"
     },
     {
-      src: "/assets/styling-curation/styling/IMG_4703 2.JPG",
+      src: import.meta.env.BASE_URL + 'assets/styling-curation/styling/IMG_4703 2.JPG',
       alt: "Styling Image 2"
     },
     {
-      src: "/assets/styling-curation/styling/IMG_2334 2.jpg",
+      src: import.meta.env.BASE_URL + 'assets/styling-curation/styling/IMG_2334 2.jpg',
       alt: "Styling Image 3"
     },
     {
-      src: "/assets/styling-curation/styling/IMG_2326 2.JPG",
+      src: import.meta.env.BASE_URL + 'assets/styling-curation/styling/IMG_2326 2.JPG',
       alt: "Styling Image 4"
     },
     {
-      src: "/assets/styling-curation/styling/FLY HIGH 3.JPG",
+      src: import.meta.env.BASE_URL + 'assets/styling-curation/styling/FLY HIGH 3.JPG',
       alt: "Styling Image 5"
     }
   ]

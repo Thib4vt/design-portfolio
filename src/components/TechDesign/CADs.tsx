@@ -6,12 +6,12 @@ export default function CADs() {
       title: "Beetle Bomber",
       items: [
         {
-          src: "/assets/cads/Beetle-Bomber.png",
+          src: import.meta.env.BASE_URL + 'assets/cads/Beetle-Bomber.png',
           alt: "Beetle Bomber - Primary View",
           className: "project-cad"
         },
         {
-          src: "/assets/cads/Beetle-Bomber2.png",
+          src: import.meta.env.BASE_URL + 'assets/cads/Beetle-Bomber2.png',
           alt: "Beetle Bomber - Secondary View",
           className: "project-cad"
         }
@@ -21,12 +21,12 @@ export default function CADs() {
       title: "Bum Bag Capri",
       items: [
         {
-          src: "/assets/cads/BumBag-Capri.png",
+          src: import.meta.env.BASE_URL + 'assets/cads/BumBag-Capri.png',
           alt: "Bum Bag Capri - Primary View",
           className: "project-cad"
         },
         {
-          src: "/assets/cads/BumBag-Capri2.png",
+          src: import.meta.env.BASE_URL + 'assets/cads/BumBag-Capri2.png',
           alt: "Bum Bag Capri - Secondary View",
           className: "project-cad"
         }
@@ -36,7 +36,7 @@ export default function CADs() {
       title: "Box Pleat Jeans",
       items: [
         {
-          src: "/assets/cads/Box Pleat Jeans.png",
+          src: import.meta.env.BASE_URL + 'assets/cads/Box Pleat Jeans.png',
           alt: "Box Pleat Jeans Technical Drawing",
           className: "project-cad"
         }
@@ -46,7 +46,7 @@ export default function CADs() {
       title: "Asymmetrical Fang Jacket",
       items: [
         {
-          src: "/assets/cads/Asymmetrical-Fang-Jacket.png",
+          src: import.meta.env.BASE_URL + 'assets/cads/Asymmetrical-Fang-Jacket.png',
           alt: "Asymmetrical Fang Jacket Technical Drawing",
           className: "project-cad"
         }
@@ -56,7 +56,7 @@ export default function CADs() {
       title: "Henley Hoodie",
       items: [
         {
-          src: "/assets/cads/Henley-Hoodie.png",
+          src: import.meta.env.BASE_URL + 'assets/cads/Henley-Hoodie.png',
           alt: "Henley Hoodie Technical Drawing",
           className: "project-cad"
         }
@@ -66,7 +66,7 @@ export default function CADs() {
       title: "Peacekeeper Button Up",
       items: [
         {
-          src: "/assets/cads/Peacekeeper-ButtonupCAD.png",
+          src: import.meta.env.BASE_URL + 'assets/cads/Peacekeeper-ButtonupCAD.png',
           alt: "Peacekeeper Button Up Technical Drawing",
           className: "project-cad"
         }

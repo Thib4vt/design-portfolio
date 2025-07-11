@@ -3,27 +3,27 @@ import React from 'react'
 export default function BumBagCapri() {
   const images = [
     {
-      src: "/assets/garments/bum-bag-capri/converted_aBumBagfrt.png",
+      src: import.meta.env.BASE_URL + 'assets/garments/bum-bag-capri/converted_aBumBagfrt.png',
       alt: "Bum Bag Capri Front View"
     },
     {
-      src: "/assets/garments/bum-bag-capri/converted_abumbagfrt1.png",
+      src: import.meta.env.BASE_URL + 'assets/garments/bum-bag-capri/converted_abumbagfrt1.png',
       alt: "Bum Bag Capri Front Detail"
     },
     {
-      src: "/assets/garments/bum-bag-capri/converted_abumbagfrt2.png",
+      src: import.meta.env.BASE_URL + 'assets/garments/bum-bag-capri/converted_abumbagfrt2.png',
       alt: "Bum Bag Capri Front Alternative"
     },
     {
-      src: "/assets/garments/bum-bag-capri/converted_bumbagBK3.png",
+      src: import.meta.env.BASE_URL + 'assets/garments/bum-bag-capri/converted_bumbagBK3.png',
       alt: "Bum Bag Capri Back View"
     },
     {
-      src: "/assets/garments/bum-bag-capri/converted_bumbagbk33.png",
+      src: import.meta.env.BASE_URL + 'assets/garments/bum-bag-capri/converted_bumbagbk33.png',
       alt: "Bum Bag Capri Back Detail (Transparent)"
     },
     {
-      src: "/assets/garments/bum-bag-capri/converted_Bzumbagbag11.png",
+      src: import.meta.env.BASE_URL + 'assets/garments/bum-bag-capri/converted_Bzumbagbag11.png',
       alt: "Bum Bag Capri Bag Detail"
     }
   ]
@@ -31,16 +31,18 @@ export default function BumBagCapri() {
   return (
     <main className="garment-page">
       <h1>Bum-Bag Capri</h1>
-      <div style={{
-        display: 'grid',
-        gridTemplateColumns: 'repeat(2, 1fr)',
-        gridTemplateRows: 'repeat(3, 1fr)',
-        gap: '1.5rem',
-        background: 'transparent',
-        justifyItems: 'center',
-        alignItems: 'center',
-        margin: '2rem 0'
-      }}>
+      <div
+        className="garment-mobile-column"
+        style={{
+          display: 'grid',
+          gridTemplateColumns: 'repeat(2, 1fr)',
+          gap: '1.5rem',
+          background: 'transparent',
+          justifyItems: 'center',
+          alignItems: 'center',
+          margin: '2rem 0'
+        }}
+      >
         {images.map((image, index) => (
           <div
             key={index}

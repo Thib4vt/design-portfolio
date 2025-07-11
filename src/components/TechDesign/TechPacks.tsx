@@ -6,12 +6,12 @@ export default function TechPacks() {
     {
       title: "Beetle Bag Bomber TP",
       path: "/tech-design/tech-packs/beetle-bomber",
-      imageUrl: "/assets/tech-packs/beetle-bomber/JPEG BOMBER_Page_02.jpg"
+      imageUrl: import.meta.env.BASE_URL + 'assets/tech-packs/beetle-bomber/JPEG BOMBER_Page_02.jpg'
     },
     {
       title: "Bum-Bag Capri TP",
       path: "/tech-design/tech-packs/bum-bag-capri",
-      imageUrl: "/assets/tech-packs/bum-bag-capri/CAPRI JPG_Page_02.jpg"
+      imageUrl: import.meta.env.BASE_URL + 'assets/tech-packs/bum-bag-capri/CAPRI JPG_Page_02.jpg'
     }
   ]
 

@@ -23,7 +23,7 @@ export default function About() {
             thibaut.rappaport@yahoo.com
           </a>
           <a 
-            href="/Resume UPTD - Thibaut Rappaport.jpg"
+            href={import.meta.env.BASE_URL + 'Resume UPTD - Thibaut Rappaport.jpg'}
             download="Thibaut_Rappaport_Resume.jpg"
             className="contact-link resume"
           >

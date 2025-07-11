@@ -2,27 +2,27 @@ import React from 'react'
 
 const images = [
   {
-    src: '/assets/garments/bum-bag-capri/converted_aBumBagfrt.png',
+    src: import.meta.env.BASE_URL + 'assets/garments/bum-bag-capri/converted_aBumBagfrt.png',
     alt: 'Bum Bag Capri Front View'
   },
   {
-    src: '/assets/garments/bum-bag-capri/converted_abumbagfrt1.png',
+    src: import.meta.env.BASE_URL + 'assets/garments/bum-bag-capri/converted_abumbagfrt1.png',
     alt: 'Bum Bag Capri Front Detail'
   },
   {
-    src: '/assets/garments/bum-bag-capri/converted_abumbagfrt2.png',
+    src: import.meta.env.BASE_URL + 'assets/garments/bum-bag-capri/converted_abumbagfrt2.png',
     alt: 'Bum Bag Capri Front Alternative'
   },
   {
-    src: '/assets/garments/bum-bag-capri/converted_bumbagBK3.png',
+    src: import.meta.env.BASE_URL + 'assets/garments/bum-bag-capri/converted_bumbagBK3.png',
     alt: 'Bum Bag Capri Back View'
   },
   {
-    src: '/assets/garments/bum-bag-capri/converted_bumbagbk33.png',
+    src: import.meta.env.BASE_URL + 'assets/garments/bum-bag-capri/converted_bumbagbk33.png',
     alt: 'Bum Bag Capri Back Detail (Transparent)'
   },
   {
-    src: '/assets/garments/bum-bag-capri/converted_Bzumbagbag11.png',
+    src: import.meta.env.BASE_URL + 'assets/garments/bum-bag-capri/converted_Bzumbagbag11.png',
     alt: 'Bum Bag Capri Bag Detail'
   }
 ]
