@@ -2032,3 +2032,9 @@ video::-moz-media-controls {
   transform: scale(1.15) !important;
   transition: transform 0.3s;
 } 
+
+@media (max-width: 768px) {
+  .hide-on-mobile {
+    display: none !important;
+  }
+} 

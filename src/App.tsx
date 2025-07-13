@@ -50,7 +50,7 @@ function App() {
             <NavLink to="/styling-curation">Styling/Curation</NavLink>
             <NavLink to="/about">Contact</NavLink>
           </nav>
-          <div className="title-container">
+          <div className="title-container hide-on-mobile">
             <h1>Thibaut Rappaport</h1>
           </div>
         </header>
